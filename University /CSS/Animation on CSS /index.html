@@ -1,14 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<div class="rbg-border">
-    <a class="btn" href=""> GET STARTED </a>
-</div>    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Static Template</title>
+    <style>
+      body {
+        background: #000;
+        background: #1a202c;
+        padding: 64px;
+        margin: 0;
+        font-family: "Exo 2", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 160px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.03em;
+      }
+
+      .heading-line {
+        line-height: 1;
+        display: block;
+        position: relative;
+        text-align: center;
+      }
+
+      .heading-line::before {
+        line-height: 1;
+        display: block;
+        position: absolute;
+        color: #fff;
+        pointer-events: none;
+        width: 100%;
+      }
+
+      .heading-line-gradient {
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      /* 1st heading gradient */
+      @keyframes first_heading_gradient {
+        0%,
+        16.667% {
+          opacity: 1;
+        }
+
+        33.333%,
+        83.333% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /* 1st heading white text */
+      @keyframes first_heading_white_text {
+        0%,
+        16.667% {
+          opacity: 0;
+        }
+
+        25%,
+        91.667% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes second_heading_gradient {
+        0%,
+        16.667% {
+          opacity: 0;
+        }
+
+        33.333%,
+        50% {
+          opacity: 1;
+        }
+
+        66.667%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes second_heading_white_text {
+        0%,
+        25% {
+          opacity: 1;
+        }
+
+        33.333%,
+        50% {
+          opacity: 0;
+        }
+
+        58.333%,
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes third_heading_gradient {
+        0%,
+        50% {
+          opacity: 0;
+        }
+
+        66.667%,
+        83.333% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes third_heading_white_text {
+        0%,
+        58.333% {
+          opacity: 1;
+        }
+
+        66.667%,
+        83.333% {
+          opacity: 0;
+        }
+
+        91.667%,
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .heading-line-first > .heading-line-gradient {
+        background-image: linear-gradient(to left, #ed8936, #ed64a6);
+        animation: first_heading_gradient 8s infinite;
+      }
+
+      .heading-line-first::before {
+        content: "Animated.";
+        animation: first_heading_white_text 8s infinite;
+      }
+
+      .heading-line-second > .heading-line-gradient {
+        background-image: linear-gradient(to left, #38b2ac, #0bc5ea);
+        animation: second_heading_gradient 8s infinite;
+      }
+
+      .heading-line-second::before {
+        content: "Gradient.";
+        animation: second_heading_white_text 8s infinite;
+      }
+
+      .heading-line-third > .heading-line-gradient {
+        background-image: linear-gradient(to left, #ecc94b, #48bb78);
+        animation: third_heading_gradient 8s infinite;
+      }
+
+      .heading-line-third::before {
+        content: "Text.";
+        animation: third_heading_white_text 8s infinite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      <span class="heading-line heading-line-first"
+        ><span class="heading-line-gradient">Animated.</span></span
+      >
+      <span class="heading-line heading-line-second"
+        ><span class="heading-line-gradient">Gradient.</span></span
+      >
+      <span class="heading-line heading-line-third"
+        ><span class="heading-line-gradient">Text.</span></span
+      >
+    </h1>
+  </body>
 </html>
