@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ h1{
+   background-color: orange;
+   padding: 20px;
+   border-style:solid;
+   border-width:2px;
+   border-color: black; 
+ }
+ h2{
+    background-color: yellow;
+    padding:20px;
+    border:3px dashed blue;
+ }
