@@ -17,6 +17,10 @@ body {
     padding:10px;
 
 }
+/* Tanto a class roda como centralizar funcionaria */
+#copyright{
+    text-align: center;
+}
 a { color: #4b566a;
     text-decoration: none;
     
@@ -26,4 +30,8 @@ a { color: #4b566a;
 }
 .center {
     text-align: center;
+}
+h1 {
+    color:#828271;
+    font-size: 1.2em;
 }
