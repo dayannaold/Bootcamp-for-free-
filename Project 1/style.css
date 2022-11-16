@@ -1,0 +1,18 @@
+body{
+text-align: center;
+background-color: black;
+font-size: 16px;
+font-family:Arial, Helvetica, sans-serif  
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color:rgb(85, 77, 77);
+}
+a:visited{
+    color: #c0c0c0;
+}
+a:hover{
+    color: #fff;
+}
