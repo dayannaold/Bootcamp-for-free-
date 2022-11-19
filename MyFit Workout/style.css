@@ -1,36 +1,37 @@
 *{
-    margin: 0;
-    padding: 0;
-}
+    margin:0;padding:0;}
 body {
-    font-size: 1em;
+    font-size:1em;
     /* 16px */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #e6e6e6;
-}
+    font-family:'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+    background:#e6e6e6;}
 #header,a{
-    background-color: #f7b600;
-    padding:15px;
-    text-align: center;
-}
-#logo,header {
-    padding: 10px;
-}
+    background-color:#f7b600;
+    padding:15px;text-align: center;border: 1px solid rgb(32, 34, 23)}
+#logo,header{
+    padding: 10px;}
+#main{
+    background:white;width: 920px;margin:0 auto;}
+#content{
+    width:660px;float:left;}
+#areaside{
+    width: 240px;float:right;}
+.content{
+    padding:20px;margin: bottom 20px;background: white;}
+#footer {
+    clear:both;text-align:center;padding: 10px;background:#ccc;}
+/*
+*/
 a{
-    text-decoration: none;
-}
+    text-decoration: none;}
 a:link, a:visited{
     color: #fff;
-
-}
+    padding: 8px 12px;}
 a:hover {
     background:#fff;
-    color:#f7b600   
-}
+    color:#f7b600}
 h1{
     color: #4e4e4e;
-    font-size: 2.4em;
-}
+    font-size: 2.4em;}
 .white{
-    color:white;
-}
+    color:white;}
