@@ -127,9 +127,10 @@ h1{
     font-weight: 600;
 }
 p{
-    color:#fff;
+    color:#777;
     font-size:14px; 
-    font-weight: 22px;
+    font-weight: 300;
+    line-weight: 22px;
     padding:10px;
 }
 .row{
