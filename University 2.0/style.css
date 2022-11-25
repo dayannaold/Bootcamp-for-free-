@@ -158,3 +158,60 @@ h3{
     box-shadow: 10px 5px 5px #EEB1A5;
     /* color value updated by myself */
 }
+@media (max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* campus */
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px;
+}
+.campus-col{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0) ;
+    opacity: 50%;   
+     /* implemented */
+    
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(50%);
+    position: absolute;
+    transform: 0.5s;
+}
+/* check after why the is not working */
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
