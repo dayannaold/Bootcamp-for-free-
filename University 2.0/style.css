@@ -127,6 +127,7 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
+
 p{
     color:#777;
     font-size:14px; 
@@ -152,7 +153,7 @@ p{
 h3{
     text-align: center;
     font-weight: 600;
-    margin:10px 0;
+    margin:100px 0px;
 }
 .course-col:hover{
     box-shadow: 10px 5px 5px #EEB1A5;
@@ -180,8 +181,6 @@ h3{
 }
 .campus-col img{
     width: 100%;
-    display: block;
-
 }
 .layer{
     background: transparent;
@@ -214,6 +213,13 @@ h3{
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+}
+h4{
+    width: 100%;
+    font-weight: 150;
+    color: #fff;
+    text-align: center;
+    opacity: 100%;
 }
 /* facilities */
 .facilities{

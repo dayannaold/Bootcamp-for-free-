@@ -7,18 +7,18 @@ body {
     background:#e6e6e6;}
 #header,a{
     background-color:#f7b600;
-    padding:15px;text-align: center;border: 1px solid rgb(32, 34, 23)}
-#logo,header{
+    padding:15px;text-align: center}
+.logo,header{
     padding: 10px;}
-#main{
+.main{
     background:white;width: 920px;margin:0 auto;}
-#content{
-    width:660px;float:left;}
-#areaside{
-    width: 240px;float:right;}
+.content{
+    width:500px;float:left;}
+.areaside{
+    width: 200px;padding:10px;float:right;}
 .content{
     padding:20px;margin: bottom 20px;background: white;}
-#footer {
+.footer {
     clear:both;text-align:center;padding: 10px;background:#ccc;}
 /*
 */
@@ -33,5 +33,9 @@ a:hover {
 h1{
     color: #4e4e4e;
     font-size: 2.4em;}
+h2{
+    color: #4e4e4e;
+    border:1px;
+}
 .white{
     color:white;}
