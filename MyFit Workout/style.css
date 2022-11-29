@@ -13,9 +13,9 @@ body {
 .main{
     background:white;width: 920px;margin:0 auto;}
 .content{
-    width:500px;float:left;}
+    width:auto;padding-bottom:50px;}
 .areaside{
-    width: 200px;padding:10px;float:right;}
+    width: 200px;padding:10px;}
 .content{
     padding:20px;margin: bottom 20px;background: white;}
 .footer {
