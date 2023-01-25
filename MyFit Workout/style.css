@@ -22,6 +22,10 @@ body {
     clear:both;text-align:center;padding: 10px;background:#ccc;}
 /*
 */
+
+#class{
+    color:red;
+}
 a{
     text-decoration: none;}
 a:link, a:visited{
