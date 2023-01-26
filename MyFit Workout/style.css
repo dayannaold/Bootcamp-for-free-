@@ -14,6 +14,10 @@ body {
     background:white;width: 920px;margin:0 auto;}
 .content{
     width:auto;padding-bottom:50px;}
+.personal{
+    color:teal;
+}
+
 .areaside{
     width: 200px;padding:10px;}
 .content{
