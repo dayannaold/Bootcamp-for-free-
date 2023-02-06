@@ -1,4 +1,21 @@
 #home {
+	background-size:cover;
 	background: #ffc107;
 	color: white;
 }
+.box{
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+/* h1{
+	margin-bottom:20px;
+	padding: 50px 0;
+}
+br {
+	height: 0;
+	width: 0;
+	clear:both;
+}
+p{
+	font-size: 18px;
+} */
