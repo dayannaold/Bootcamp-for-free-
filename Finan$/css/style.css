@@ -7,6 +7,10 @@
 	padding: 60px 0;
 	border-bottom: 1px solid #e5e5e5;
 }
+
+footer p a {
+	margin: 5px 15px;
+}
 /* h1{
 	margin-bottom:20px;
 	padding: 50px 0;
@@ -14,7 +18,7 @@
 br {
 	height: 0;
 	width: 0;
-	clear:both;
+	clear:boxth;
 }
 p{
 	font-size: 18px;
