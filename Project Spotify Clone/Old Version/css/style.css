@@ -27,7 +27,9 @@ nav.navbar-transparent{
 }
 .navbar-light .navbar-toggler {
     color: rgba(255,255,255,5);
-    border-color: rgba(255,255,255,5);  
+    border-color: rgba(255,255,255,5); 
+	float: none; 
+	/* Had a bug with my navbar not showing up on laptop devices but working on mobile screen and then I solved the problem with the float:none */
 }
 .divisor{
     width: 1px;
