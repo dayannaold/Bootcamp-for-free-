@@ -14,7 +14,7 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="imagens/1298766_spotify_music_sound_icon.png">
+    <link rel="icon" href="imagens/">
 
     <title>Música para todos - Spotify</title>
   </head>
@@ -56,9 +56,13 @@
     </header>
 <section id="home" class="d-flex">
   <div class="container align-self-center">
-    <div class="row space">
+    <div class="row">
       <div class="col-md-12 cover">
-        <h1 class="display-1">Música para todos</h1>
+        <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <h1>Música para todos</h1>
         <a href="" class="btn btn-lg btn-custom btn-purple">
           Aproveite o Spotify Free
         </a> 
@@ -66,8 +70,27 @@
           Obter Spotify Premium
         </a> 
       </div>
+
+      <div class="carousel-item">
+        <h1>As melhores rádios</h1>
+        <a href="" class="btn btn-lg btn-custom btn-branco">
+          <i class="fas fa-music" ></i> Ouça agora 
+        </a>
+        <!-- align texte later and CSS style -->
     </div>
-  </div>
+                <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                  <i class="fas fa-angle-left fa-3x"></i>
+                </a>
+  
+                <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                  <i class="fas fa-angle-right fa-3x"></i>
+                </a>
+  
+              </div>
+  
+            </div>
+        </div>
+      </section>
 </section>
 
 <section id="servicos" class="box">
@@ -144,53 +167,6 @@
   </div>
 </section>
 
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        <img src="imagens/spotify.svg" width="142">
-      </div>
-      <div class="col-md-2">
-        <h4>company</h4>
-        <ul class="navbar-nav">
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Empregos</a></li>
-          <li><a href="">Imprensa</a></li>
-          <li><a href="">Novidades</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <h4>comunidades</h4>
-        <ul class="navbar-nav">
-          <li><a href="">Artistas</a></li>
-          <li><a href="">Desenvolvedores</a></li>
-          <li><a href="">Marcas</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <h4>links uteis</h4>
-        <ul class="navbar-nav">
-          <li><a href="">Ajuda</a></li>
-          <li><a href="">Presentes</a></li>
-          <li><a href="">Player da web</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul>
-          <li>
-            <a href=""><img src="imagens/facebook.png"></a>
-          </li>
-          <li>
-            <a href=""><img src="imagens/twitter.png"></a>
-          </li>
-          <li>
-            <a href=""><img src="imagens/instagram.png"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
