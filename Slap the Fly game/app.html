@@ -12,8 +12,19 @@
 </head>
 <body onresize="AdaptingSizeGame()">
 
+    <div class="painel">
+        
+       <div class="life"></div> 
+    
+
+<div class="timer"> Countdown : ? </div>
+
+</div>
     <script>
-         randomPosition()
+
+         setInterval(function(){
+            randomPosition()
+         }, 1000)
     </script>
     
 </body>
