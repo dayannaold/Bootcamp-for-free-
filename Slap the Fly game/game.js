@@ -1,6 +1,7 @@
 
 var Height = 0
 var Width = 0
+var lifes = 1
 
 function AdaptingSizeGame() {
 	Height = window.innerHeight
@@ -14,12 +15,20 @@ AdaptingSizeGame()
 
 function randomPosition() {
 
-if (document.getElementById('fly'))
-{
-document.getElementById('fly').remove()
+if (document.getElementById('fly')) {
+		document.getElementById('fly').remove()
+
+		//console.log('element selected: l' + lifes)
+		if(lifes > 3){
+			window.location.href = 'gameover.html'
+		}
+		else{
+
+		document.getElementById('l' + lifes).src = "imagens/coracao_vazio.png"
+
+		lifes++
+	}
 }
-
-
 	var posX = Math.floor(Math.random() * Height) - 90
 	var posY = Math.floor(Math.random() * Width) - 90
 
@@ -35,6 +44,9 @@ document.getElementById('fly').remove()
 	mosquito.style.top = posY + 'px'
 	mosquito.style.position = 'absolute'
 	mosquito.id = 'fly'
+	mosquito.onclick = function(){
+		this.remove( )
+	}
 
 	document.body.appendChild(mosquito)
 
@@ -66,14 +78,6 @@ function randomSide(){
 
 			case 1:
 				return 'sideB'
-
-			case 2:
-				return 'fly3'
-
-			case 3:
-				return 'sideB'
-
-			case 4:
-				return 'fly5'
+   
 	}
 }
