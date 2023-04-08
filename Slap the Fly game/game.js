@@ -19,14 +19,13 @@ if (document.getElementById('fly')) {
 		document.getElementById('fly').remove()
 
 		//console.log('element selected: l' + lifes)
-		if(lifes > 3){
+		if(lifes > 3) {
 			window.location.href = 'gameover.html'
-		}
-		else{
+		}else{
 
-		document.getElementById('l' + lifes).src = "imagens/coracao_vazio.png"
+			document.getElementById('l' + lifes).src = "imagens/coracao_vazio.png"
 
-		lifes++
+			lifes++
 	}
 }
 	var posX = Math.floor(Math.random() * Height) - 90
