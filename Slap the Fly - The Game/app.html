@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slap the Fly - Game</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <script src="game.js"></script>
+
+</head>
+<body onresize="AdaptingSizeGame()">
+
+        <div class="painel"> 
+       <div class="life">
+        <img id="l1" src="imagens/coracao_cheio.png"/>
+        <img id="l2" src="imagens/coracao_cheio.png"/>  
+        <img id ="l3" src="imagens/coracao_cheio.png"/>    
+       </div> 
+    <div class="timer">Countdown: ?</div>  
+</div>
+
+    <script>
+
+         setInterval(function(){
+            randomPosition()
+         }, 2000)
+    </script>
+    
+</body>
+</html>
