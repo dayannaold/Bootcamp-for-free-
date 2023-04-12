@@ -2,6 +2,7 @@
 var Height = 0
 var Width = 0
 var lifes = 1
+var clock = 15
 
 function AdaptingSizeGame() {
 	Height = window.innerHeight
@@ -12,6 +13,20 @@ function AdaptingSizeGame() {
 
 AdaptingSizeGame()
 
+var timer = setInterval(function(){
+
+	clock -= 1
+
+	if(clock < 0){
+		clearInterval(timer)
+		clearInterval(createFly)
+		window.location.href = "victory.html "
+		
+	} else {
+			document.getElementById('timer').innerHTML = clock
+	}
+
+}, 1000)
 
 function randomPosition() {
 

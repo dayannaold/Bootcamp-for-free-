@@ -18,15 +18,16 @@
         <img id="l2" src="imagens/coracao_cheio.png"/>  
         <img id ="l3" src="imagens/coracao_cheio.png"/>    
        </div> 
-    <div class="timer">Countdown: ?</div>  
+    <div class="timer">Countdown: <span id="timer"></span></div>  
 </div>
 
     <script>
-
-         setInterval(function(){
+        document.getElementById('timer').innerHTML = clock
+	
+        var createFly = setInterval(function(){
             randomPosition()
          }, 2000)
     </script>
-    
+    x
 </body>
 </html>
