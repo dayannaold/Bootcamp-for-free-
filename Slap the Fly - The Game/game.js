@@ -4,6 +4,25 @@ var Width = 0
 var lifes = 1
 var clock = 15
 
+var createFlyInterval = 1500
+
+var level = window.location.search 
+level = level.replace('?' , '')
+
+if(level === 'easy') {
+	//1500
+	createFlyInterval = 1500
+} else
+if (level === 'medium') {
+	//1000
+	createFlyInterval = 1000
+
+} else
+if (level === 'hard') {
+	//750
+	createFlyInterval = 750
+}
+
 function AdaptingSizeGame() {
 	Height = window.innerHeight
 	Width = window.innerWidth
